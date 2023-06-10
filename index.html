@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tip Calculator</title>
+        <!-- Reset -->
+        <link rel="stylesheet" href="/assets/reset.css" />
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Style -->
+        <link rel="stylesheet" href="/assets/style.css" />
+    </head>
+
+    <body>
+        <article class="calculator">
+            <div class="container">
+                <h1 class="heading">Tip Calculator</h1>
+                <div class="calculator__body">
+                    <div class="calculator__input">
+                        <h2 class="title">Bill</h2>
+                        <input
+                            class="input-box"
+                            type="text"
+                            name=""
+                            id="bill"
+                            placeholder="$0.00"
+                        />
+
+                        <h2 class="title secTip">Select Tip %</h2>
+                        <select
+                            name=""
+                            id="select_Tip"
+                            class="input-box select-box"
+                        >
+                            <option selected value="0">Select</option>
+                            <option value="0.3">Excellent - 30%</option>
+                            <option value="0.2">Good - 20%</option>
+                            <option value="0.10">Fair - 10%</option>
+                            <option value="0.05">Poor - 5%</option>
+                            <option value="">Custom</option>
+                        </select>
+
+                        <h2 class="title numPeople">Number of People</h2>
+                        <input
+                            class="input-box"
+                            type="text"
+                            name=""
+                            id="numberOfPeople"
+                            value="1"
+                            ;
+                        />
+                    </div>
+
+                    <div class="calculator__output">
+                        <div class="calculator__output-body">
+                            <div class="calculator__tip">
+                                <div class="calculator__tip-box">
+                                    <h2 class="title title-output">
+                                        Tip Amount
+                                    </h2>
+                                    <p class="perPerson">/ person</p>
+                                </div>
+
+                                <p class="pay" id="pay_tip">$0.00</p>
+                            </div>
+
+                            <div class="calculator__total">
+                                <div class="calculator__total-box">
+                                    <h2 class="title title-output">Total</h2>
+                                    <p class="perPerson">/ person</p>
+                                </div>
+                                <p class="pay" id="pay_total">$0.00</p>
+                            </div>
+
+                            <input
+                                class="btn"
+                                type="button"
+                                id="calculate_btn"
+                                value="Calculate"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- JS -->
+        <script src="./app.js"></script>
+    </body>
+</html>
